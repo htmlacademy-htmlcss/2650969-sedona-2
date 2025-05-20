@@ -2,7 +2,7 @@
 
 * Студент: [Елена Захарова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2650969).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-* Мой сайт: [Мой проект Седона](https://github.com/elena-zaharova/2650969-sedona-2)
+* Мой сайт: [Мой проект Седона](https://elena-zaharova.github.io/2650969-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
