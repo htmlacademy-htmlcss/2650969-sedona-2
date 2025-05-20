@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елена Захарова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2650969).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
