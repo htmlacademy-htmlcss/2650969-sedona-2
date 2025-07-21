@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="styles/styles.css" rel="stylesheet">
+    <link  rel="stylesheet" href="styles/slyles.css">
     <title>Каталог отлей в городе Седона</title>
   </head>
   <body>
@@ -41,16 +41,17 @@
         </nav>
     </header>
     <main class="main-inner" data-test="main">
-        <h1 class="inner-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">На главную страницу</a>
-            </li>
-            <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="catalog.html" area-current="page">Гостиницы</a>
-            </li>
-        </ul>
-        <section class="hotels-filter" data-test="filter">
+        <section class="picture-background">
+            <h1 class="inner-title">Гостиницы Седоны</h1>
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link main-icon" href="index.html">На главную страницу</a>
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="catalog.html" area-current="page">Гостиницы</a>
+                </li>
+            </ul>
+            <section class="hotels-filter" data-test="filter">
             <h2 class="visually-hidden">Фильтр гостиниц</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
@@ -103,21 +104,22 @@
                 <button class="filter-button active-filter-button" type="submit">Применить</button>
                 <button class="filter-button" type="reset">Сбросить</button>
             </form>
+            </section>
         </section>
         <section class="catalog" data-test="catalog">
-            <h2 class="catalog-tittle">Найдено гостиниц: 38</h2>
+            <h2 class="catalog-title">Найдено гостиниц: 38</h2>
             <select class="catalog-select">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="popular">Сначала популярные</option>
             </select>
             <a class="catalog-view catalog-view-selected" href="#">
-                <span class="visually-hidden">Плитка</span>
+                <span class="visually-hidden">Показать карточками</span>
             </a>
             <a class="catalog-view" href="#">
-                 <span class="visually-hidden">По одной</span>
+                 <span class="visually-hidden">Показать по одной</span>
             </a>
             <a class="catalog-view" href="#">
-                <span class="visually-hidden">Списком</span>
+                <span class="visually-hidden">Показать списком</span>
             </a>
             <ul class="catalog-list">
                 <li class="catalog-item">
@@ -206,7 +208,7 @@
                 </li>
             </ul>
         </section>
-        <section class="subscribe" data-test="subscribe">
+        <section class="subscribe subscribe-without-back" data-test="subscribe">
             <h2 class="header-block">Подпишитесь на рассылку</h2>
             <p class="text-block">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
