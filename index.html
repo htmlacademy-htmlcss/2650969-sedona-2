@@ -8,7 +8,7 @@
   <body>
     <div class="page-container">
         <header class="page-header" data-test="header">
-            <a class="navigation-logo" href="index.html" area-current="page" >
+            <a class="navigation-logo" href="index.html" aria-current="page" >
                 <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип сайта города Седона">
             </a>
             <nav class="navigation">
@@ -114,7 +114,7 @@
                     <p class="text-block text-subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
                     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                         <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
-                        <input type="text" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
+                        <input class="subscribe-email" type="text" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
                         <button class="subscribe-button btn-large" type="submit">Подписаться</button>
                     </form>
                 </div>

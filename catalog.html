@@ -47,10 +47,12 @@
                 <h1 class="inner-title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs-list">
                     <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link main-icon" href="index.html">На главную страницу</a>
+                        <a class="breadcrumbs-link main-icon" href="index.html">
+                            <span class="visually-hidden">На главную страницу</span>
+                        </a>
                     </li>
                     <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
+                        <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
                     </li>
                 </ul>
                 <section class="hotels-filter" data-test="filter">
@@ -114,19 +116,23 @@
         <section class="catalog" data-test="catalog">
             <div class="catalog-info">
                 <h2 class="catalog-title">Найдено гостиниц: 38</h2>
-                <select class="catalog-select">
-                    <option value="cheap">Сначала дешевые</option>
-                    <option value="popular">Сначала популярные</option>
-                </select>
-                <a class="catalog-view catalog-view-selected" href="#">
-                    <span class="visually-hidden">Показать карточками</span>
-                </a>
-                <a class="catalog-view" href="#">
-                    <span class="visually-hidden">Показать по одной</span>
-                </a>
-                <a class="catalog-view" href="#">
-                    <span class="visually-hidden">Показать списком</span>
-                </a>
+                <div class="sort">
+                    <select class="catalog-select">
+                        <option value="cheap">Сначала дешевые</option>
+                        <option value="popular">Сначала популярные</option>
+                    </select>
+                    <div class="catalog-view-controls">
+                        <a class="catalog-view catalog-view-card catalog-view-selected" href="#">
+                            <span class="visually-hidden">Показать карточками</span>
+                        </a>
+                        <a class="catalog-view catalog-view-one " href="#">
+                            <span class="visually-hidden">Показать по одной</span>
+                        </a>
+                        <a class="catalog-view catalog-view-list" href="#">
+                            <span class="visually-hidden">Показать списком</span>
+                        </a>
+                    </div>
+                </div>
             </div>
             <ul class="catalog-list">
                 <li class="catalog-item">
@@ -140,9 +146,9 @@
                     <p class="card-price">От 4000 ₽</p>
                     <a class="more-button btn-small" href="#">Подробнее</a>
                     <button class="favorite-card btn-small">В избранное</button>
-                    <p class="four stars">
+                    <div class="card-stars four-stars">
                         <span class="visually-hidden">Отель 4 звезды</span>
-                    </p>
+                    </div>
                     <p class="card-rating"> Рейтинг: 8,5</p>
                 </li>
                 <li class="catalog-item">
@@ -155,10 +161,10 @@
                     <p class="card-description">Гостиница</p>
                     <p class="card-price">От 5000 ₽</p>
                     <a class="more-button btn-small" href="#">Подробнее</a>
-                    <button class="favorite-card btn-small">В избранное</button>
-                    <p class="four stars">
+                    <button class="favorite-card favorite-card-selected btn-small">В избранном</button>
+                    <div class="card-stars four-stars">
                         <span class="visually-hidden">Отель 4 звезды</span>
-                    </p>
+                    </div>
                     <p class="card-rating"> Рейтинг: 9,2</p>
                 </li>
                 <li class="catalog-item">
@@ -172,9 +178,9 @@
                     <p class="card-price">От 2500 ₽</p>
                     <a class="more-button btn-small" href="#">Подробнее</a>
                     <button class="favorite-card btn-small">В избранное</button>
-                    <p class="four stars">
+                    <div class="card-stars three-stars">
                         <span class="visually-hidden">Отель 3 звезды</span>
-                    </p>
+                    </div>
                     <p class="card-rating"> Рейтинг: 6,9</p>
                 </li>
                 <li class="catalog-item">
@@ -188,9 +194,9 @@
                     <p class="card-price">От 1500 ₽</p>
                     <a class="more-button btn-small" href="#">Подробнее</a>
                     <button class="favorite-card btn-small">В избранное</button>
-                    <p class="four stars">
+                    <div class="card-stars two-stars">
                         <span class="visually-hidden">Отель 2 звезды</span>
-                    </p>
+                    </div>
                     <p class="card-rating"> Рейтинг: 5,0</p>
                 </li>
             </ul>
@@ -221,7 +227,7 @@
                 <p class="text-block">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                     <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
-                    <input type="text" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
+                    <input class="subscribe-email" type="text" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
                     <button class="subscribe-button btn-large" type="submit">Подписаться</button>
                 </form>
             </div>
