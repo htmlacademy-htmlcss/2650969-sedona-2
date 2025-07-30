@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link  rel="stylesheet" href="styles/slyles.css">
+    <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -162,7 +163,7 @@
                 <form class="modal-form"  action="https://echo.htmlacademy.ru/" method="post">
                     <label class="modal-label" for="date-in">
                         <span class="modal-label-tittle">Дата заезда:</span>
-                        <input class="modal-input" id="date-in" type="text" placeholder="1 января 2020" required>
+                        <input class="modal-input" id="date-in" type="text" placeholder="1 января 2020" value="27 апреля 2020" required>
                         <span class="modal-label-description modal-label-warning"> Мы не можем отправить вас в прошлое.</span>
                     </label>
                     <label class="modal-label" for="date-out">
@@ -171,7 +172,7 @@
                         <span class="modal-label-description"> На эти даты есть свободные номера. Пока есть.</span>
                     </label>
                     <div class="modal-people-count">
-                        <label class="modal-label modal-label-tittle" for="adults">Взрослые</label>
+                        <label class="modal-label modal-label-tittle" for="adults">Взрослые:</label>
                         <div class="modal-control-wrapper">
                             <input class="modal-input-count" id="adults" type="number" placeholder="1" value="2" required>
                             <button class="modal-control-button minus-btn" type="button">
@@ -182,7 +183,7 @@
                             </button>
                         </div>
                         <div class="modal-children-tooltip">
-                            <label class="modal-label modal-label-tittle" for="children">Дети:</label>
+                            <label class="modal-label modal-label-tittle tittle-right" for="children">Дети:</label>
                             <button class="toggle-tooltip" type="button">
                                 <span class="visually-hidden">Открыть подсказку про поле "Дети"</span>
                             </button>
