@@ -73,7 +73,7 @@
                     </li>
                     <li class="list-picture-item block-reverse">
                         <div class="list-item-wrapper">
-                            <h3 class="list-header header-picture">Там есть мост дьявола</h3>
+                            <h3 class="list-header header-picture">Там есть <br> мост дьявола</h3>
                             <p class="list-text text-picture">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                         </div>
                         <img class="advantages-list-image" src="images/photo-2.jpg" width="800" height="385" alt="Каменный мост в горах">
@@ -82,36 +82,36 @@
             </section>
             <section class="reasons">
                 <div class="reason-wrapper">
-                    <h2 class="header-block">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+                    <h2 class="header-block header-block-reasons">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
                     <p class="text-block">Опытный персонал и качественное обслуживание!</p>
                 </div>
                 <ul class="reasons-list">
                     <li class="list-item reasons-item">
-                        <img class="advantages-service-image" src="images/Advantage-icon-home.svg" alt="Иконка домика" width="76" height="76">
+                        <img class="advantages-service-image" src="images/Advantage-icon-home.svg" alt="Иконка домика" width="75" height="72">
                         <h3 class="list-header">Жильё</h3>
-                        <p class="list-text text-reasons">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                        <p class="list-text text-reasons">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
                     </li>
                     <li class="list-item reasons-item">
-                        <img class="advantages-service-image" src="images/Advantage-icon-burger.svg" alt="Иконка еды" width="76" height="76">
+                        <img class="advantages-service-image" src="images/Advantage-icon-burger.svg" alt="Иконка еды" width="75" height="72">
                         <h3 class="list-header">Еда</h3>
-                        <p class="list-text text-reasons">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                        <p class="list-text text-reasons">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
                     </li>
                     <li class="list-item reasons-item">
-                        <img class="advantages-service-image" src="images/Advantage-icon-gift.svg" alt="Иконка сувенира" width="76" height="76">
+                        <img class="advantages-service-image" src="images/Advantage-icon-gift.svg" alt="Иконка сувенира" width="75" height="72">
                         <h3 class="list-header">Сувениры</h3>
-                        <p class="list-text text-reasons">Не только китайского, но и настоящего местного производства!</p>
+                        <p class="list-text text-reasons">Не только китайского,<br> но и настоящего местного<br> производства!</p>
                     </li>
                 </ul>
             </section>
             <section class="search" data-test="search">
-                <h2 class="header-block">Заинтересовались?</h2>
-                <p class="text-block">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <h2 class="header-block header-block-search">Заинтересовались?</h2>
+                <p class="text-block">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <a class="search-link btn-large" href="#">Поиск гостиницы в Седоне</a>
             </section>
             <section class="subscribe" data-test="subscribe">
                 <div class="subscribe-wrapper">
                     <h2 class="header-block header-subscribe">Подпишитесь на рассылку</h2>
-                    <p class="text-block text-subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                    <p class="text-block text-subscribe">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
                     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                         <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
                         <input class="subscribe-email" type="text" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
@@ -154,22 +154,24 @@
             </a>
         </footer>
 
-        <div class="modal-wrapper modal-close">
+    </div>
+
+    <div class="modal-wrapper modal-closed">
             <section class="modal-container">
                 <h2 class="modal-tittle">Поиск гостиницы в Седоне</h2>
                 <form class="modal-form"  action="https://echo.htmlacademy.ru/" method="post">
                     <label class="modal-label" for="date-in">
                         <span class="modal-label-tittle">Дата заезда:</span>
-                        <input class="modal input" id="date-in" type="text" placeholder="1 января 2020" required>
+                        <input class="modal-input" id="date-in" type="text" placeholder="1 января 2020" required>
                         <span class="modal-label-description modal-label-warning"> Мы не можем отправить вас в прошлое.</span>
                     </label>
                     <label class="modal-label" for="date-out">
                         <span class="modal-label-tittle">Дата выезда:</span>
-                        <input class="modal input" id="date-out" type="text" placeholder="1 января 2025" value="1 сентября 2023" required>
-                        <span class="modal-label-description modal-label-warning"> На эти даты есть свободные номера. Пока есть.</span>
+                        <input class="modal-input" id="date-out" type="text" placeholder="1 января 2025" value="1 сентября 2023" required>
+                        <span class="modal-label-description"> На эти даты есть свободные номера. Пока есть.</span>
                     </label>
                     <div class="modal-people-count">
-                        <label class="modal-label" for="adults">Взрослые</label>
+                        <label class="modal-label modal-label-tittle" for="adults">Взрослые</label>
                         <div class="modal-control-wrapper">
                             <input class="modal-input-count" id="adults" type="number" placeholder="1" value="2" required>
                             <button class="modal-control-button minus-btn" type="button">
@@ -180,7 +182,7 @@
                             </button>
                         </div>
                         <div class="modal-children-tooltip">
-                            <label class="modal-label-tittle" for="children">Дети:</label>
+                            <label class="modal-label modal-label-tittle" for="children">Дети:</label>
                             <button class="toggle-tooltip" type="button">
                                 <span class="visually-hidden">Открыть подсказку про поле "Дети"</span>
                             </button>
@@ -205,7 +207,5 @@
                 </button>
             </section>
         </div>
-
-    </div>
   </body>
 </html>
