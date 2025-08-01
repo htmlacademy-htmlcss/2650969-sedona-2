@@ -263,7 +263,7 @@ h1, h2, h3, p {
     display: flex;
     flex-wrap: wrap;
     column-gap: 42px;
-    padding: 50px 70px 30px;
+    padding: 38px 70px 30px;
     align-items: center;
     justify-content: space-between;
 }
@@ -329,6 +329,8 @@ h1, h2, h3, p {
     flex-wrap: wrap;
     min-width: 320px;
     max-width: 700px;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -780,46 +782,111 @@ h1, h2, h3, p {
     color: #ffffff;
 }
 
-.checkbox-mark {
-    border-radius: 4px;
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    padding-left: 36px;
+    user-select: none;
 }
 
-.control:has(.checkbox[type="checkbox"])::before {
+.input-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox::before {
     content: "";
+    position: absolute;
     width: 20px;
     height: 20px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     border-radius: 4px;
     background-color: #ffffff;
-    display: block;
+    transition: all 0.2s;
 }
 
-
-.control:focus-within::before {
-    outline: 2px solid var(--blue-color);
-}
-
-.control:has(.checkbox[type="checkbox"])::before:focus {
-    outline: 2px var(--black-color);
-}
-
-.control:has(.checkbox[type="checkbox"]:checked)::before {
-    background-image: url(../images/tick.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.control:has(.radio[type="radio"])::before {
+.checkbox::after {
     content: "";
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    background-color: #FFF;
+    position: absolute;
+    background-image: url(../images/tick.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    left: 0;
+    top: 2px;
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
-.control:has(.radio[type="radio"]:checked)::before{
+.checkbox:has(.input-checkbox:checked)::after {
+    opacity: 1;
+}
+
+.checkbox:has(.input-checkbox:focus)::before {
+    border: 2px solid var(--black-color);
+    outline: 1px solid #FFFFFF;
+}
+
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    padding-left: 36px;
+    user-select: none;
+}
+
+.input-radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    background-color: #ffffff;
+    transition: all 0.2s;
+}
+
+.radio::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 100%;
     background-image: url(../images/circle.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 10px 10px;
+    left: 0;
+    top: 2px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.radio:has(.input-radio:checked)::after {
+    opacity: 1;
+}
+
+.radio:has(.input-radio:focus)::before {
+    border: 2px solid var(--black-color);
+    outline: 1px solid #FFFFFF;
 }
 
 .catalog-filter-group-price{
@@ -851,7 +918,8 @@ h1, h2, h3, p {
 }
 
 .input-range-label:focus-within {
-    outline: 3px solid var(--blue-color);
+    border: 2px solid var(--black-color);
+    outline: 1px solid #FFFFFF;
     background-color: #E6E6E6;
     opacity: 1;
 }
@@ -948,7 +1016,8 @@ label.max-label {
 
 .button-range:focus-visible{
     box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.25);
-    outline: 3px solid var(--blue-color);
+    border: 2px solid var(--black-color);
+    outline: 1px solid #FFFFFF;
     opacity: 1;
 }
 
@@ -994,8 +1063,8 @@ label.max-label {
 }
 
 .filter-button:focus-visible {
-    border-color: var(--blue-color);
-    outline: 2px solid var(--blue-color);
+    border: 2px solid var(--black-color);
+    outline: 1px solid #FFFFFF;
     opacity: 1;
 }
 
@@ -1587,7 +1656,9 @@ a.pagination-link-current:active{
     border: 0;
 }
 
-.modal-control-button:focus-visible {
+.modal-control-button:focus-visible,
+.modal-input-count:focus-visible {
+    z-index: 1;
     opacity: 1;
 }
 
