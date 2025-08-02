@@ -224,7 +224,6 @@ p {
   opacity: 1;
 }
 
-
 .navigation-list-icon {
   display: flex;
   width: 44px;
@@ -619,6 +618,7 @@ p {
   text-decoration: none;
   text-align: center;
   margin: 54px 108px 0 108px;
+  width: 376px;
 }
 
 .search-link:hover,
