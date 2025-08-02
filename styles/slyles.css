@@ -1524,7 +1524,7 @@ a.pagination-link-current:active {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
 }
 
 .modal-label-tittle {
